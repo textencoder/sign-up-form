@@ -61,11 +61,15 @@ aside {
 
 main {
     width: 70%;
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #leading-info {
     width: 65%;
+    height: 20%;
 
     h2 {
         font-size: 1rem;
@@ -74,14 +78,47 @@ main {
     }
 }
 
-#form-section {
+form {
     border: 2px solid black;
-    height: 300px;
+    height: 100%;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    
     h2 {
         font-size: 1rem;
-        padding: 0 20px;
-        margin-bottom: 10px;
     }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }   
+    
+    button {
+        width: 20%;
+        padding: 8px 10px;
+        background-color: darkolivegreen;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}
+
+#input-area {
+    border: 2px solid black;
+    height: 80%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0;
 }
